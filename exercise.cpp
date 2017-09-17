@@ -61,6 +61,8 @@ vector<vector<vector<int>>> distribute_matrix(vector<vector<int>> matrix, int n,
   return submatrices;
 }
 
+// sums all the colums of the given matrix
+// returns the vector sum
 vector<int> solve_column_sum(vector<vector<int>> matrix)
 {
   vector<int> vector_sum;
@@ -78,6 +80,7 @@ vector<int> solve_column_sum(vector<vector<int>> matrix)
 }
 
 // https://stackoverflow.com/questions/1407786/how-to-set-cpu-affinity-of-a-particular-pthread
+// assigns a thread to a certain CPU core
 int assign_to_cpu(pthread_t thread, int core_id)
 {
   cpu_set_t cpuset;
